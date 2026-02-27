@@ -1,0 +1,22 @@
+api:
+  metadata_url: "https://prodkuntarest.westeurope.cloudapp.azure.com/rest/v1/json/aineistot"
+  timeout_seconds: 30
+  max_retries: 3
+
+ingestion:
+  reporting_packages_whitelist:
+    - "Käyttötalous"
+    - "Tuloslaskelma"
+  organization_types:
+    - "kunta"
+    - "kuntayhtymä"
+  dry_run_year_limit: 1
+  dry_run_org_limit: 2
+
+storage:
+  base_path: "data"
+  raw_path: "data/raw"
+  curated_path: "data/curated"
+  duckdb_path: "data/vk_analytics.duckdb"
+
+log_level: "INFO"
