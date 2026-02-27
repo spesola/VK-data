@@ -2,17 +2,18 @@
 
 MVP backend for Finnish municipal finance analytics.
 
-## Milestone 1 scope
-- Python project scaffold with `uv`
-- Folder layout for ETL/API/config/data/tests
-- YAML-driven configuration system with environment overrides
+## Milestone 2 scope
+- Raw ingestion pipeline for `/aineistot` metadata
+- Reporting package whitelist filtering
+- Dry-run dataset download scope (2 municipalities, 1 year)
+- Long-format normalization
+- Output to `data/facts_raw.parquet`
 
 ## Quickstart
 
 ```bash
-uv sync
-uv run python -m etl.cli --config config/settings.yaml --print-config
-uv run uvicorn api.main:app --reload
+python -m etl.cli --config config/settings.yaml --print-config
+python -m etl.cli --config config/settings.yaml --run-pipeline
 ```
 
 ## Project structure

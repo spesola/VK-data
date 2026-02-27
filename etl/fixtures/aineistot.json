@@ -1,0 +1,34 @@
+[
+  {
+    "dataset_id": "kayttotalous-2023-helsinki",
+    "reporting_package": "Käyttötalous",
+    "organization_type": "kunta",
+    "municipality_code": "091",
+    "year": 2023,
+    "dataset_url": "fixture://datasets/kayttotalous-2023-helsinki.json"
+  },
+  {
+    "dataset_id": "kayttotalous-2023-espoo",
+    "reporting_package": "Käyttötalous",
+    "organization_type": "kunta",
+    "municipality_code": "049",
+    "year": 2023,
+    "dataset_url": "fixture://datasets/kayttotalous-2023-espoo.json"
+  },
+  {
+    "dataset_id": "tuloslaskelma-2023-helsinki",
+    "reporting_package": "Tuloslaskelma",
+    "organization_type": "kunta",
+    "municipality_code": "091",
+    "year": 2023,
+    "dataset_url": "fixture://datasets/tuloslaskelma-2023-helsinki.json"
+  },
+  {
+    "dataset_id": "other-2023-vantaa",
+    "reporting_package": "Investoinnit",
+    "organization_type": "kunta",
+    "municipality_code": "092",
+    "year": 2023,
+    "dataset_url": "fixture://datasets/other-2023-vantaa.json"
+  }
+]
