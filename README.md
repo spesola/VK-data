@@ -22,3 +22,13 @@ uv run uvicorn api.main:app --reload
 - `config/` YAML configuration
 - `data/` local data lake (raw + curated)
 - `tests/` automated tests
+
+
+## Raw storage CLI (milestone 2)
+
+```bash
+uv run python -m etl.cli --dataset-json path/to/dataset.json
+uv run python -m etl.cli --dataset-json path/to/dataset.json --dry-run
+```
+
+The command normalizes one JSON dataset into long-form rows, appends them into `data/facts_raw.parquet`, and prints row count + schema.
